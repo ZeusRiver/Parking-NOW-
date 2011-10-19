@@ -1,4 +1,3 @@
-
 module Jekyll
   class HamlConverter < Converter
     safe true
