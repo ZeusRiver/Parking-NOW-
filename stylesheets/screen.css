@@ -2,40 +2,61 @@ body {
   margin-top: 1.0em;
   font-family: Helvetica, Arial, FreeSans, san-serif;
   color: #fff;
-  background-color: #000;
-  background-image: url(images/fallback-gradient.png);
-  background-image: -webkit-radial-gradient(center, #303030, black);
-  background-image: -moz-radial-gradient(center, #303030, black);
-  background-image: -ms-radial-gradient(top, #303030, black);
-  background-image: -o-radial-gradient(top, #303030, black); }
+  background: #465164 url(images/fallback-gradient.png) top center no-repeat;
+  background-image: -webkit-radial-gradient(top, #aaa, #465164);
+  background-image: -moz-radial-gradient(top, #aaa, #465164);
+  background-image: -ms-radial-gradient(top, #aaa, #465164);
+  background-image: -o-radial-gradient(top, #aaa, #465164); 
+	text-shadow: 1px 1px 1px #333;
+}
 
 #container {
   margin: 0 auto;
-  width: 700px; }
+  width: 960px; }
 
 h1 {
-  font-family: 'Bowlby One SC', sans-serif;
+	font-family: 'Coustard', serif;
   font-size: 3em;
-  color: #007200;
-  margin-bottom: 3px; }
+	color: #fff;
+  margin-bottom: 3px; 
+	text-shadow: 1px 1px 1px #333;
+	}
 
-h1 a, h2 a {
-  text-decoration: none; }
+h1 a, h2.zr a {
+  text-decoration: none; 
+	color: #fff;
+}
 
-h1 a:hover, h2 a:hover {
-  text-decoration: underline; }
+h2.zr a {
+	font-family: 'Permanent Marker', cursive;
+	font-weight: bold;
+}
+
+h1 a:hover, h2.zr a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
 
 h2 {
-  font-family: 'Permanent Marker', cursive;
+	font-family: 'Coustard', serif;
   font-size: 1.5em;
-  color: #007200; }
+  color: #168216; }
 
 h3 {
   text-align: center;
-  color: #007200; }
+  color: #168216; }
+
+p {
+	text-shadow: 1px 1px 1px #333;
+}
 
 a {
-  color: #007200; }
+	color: #168216;
+}
+
+a:hover {
+  text-decoration: underline; 
+	color: #039603;}
 
 .description {
   font-size: 1.2em;
