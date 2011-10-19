@@ -27,7 +27,7 @@ module Jekyll
       ext =~ /scss/i
     end
 
-    def output_ext(ext)
+    def output_ext(ext) 
       ".css"
     end
 
