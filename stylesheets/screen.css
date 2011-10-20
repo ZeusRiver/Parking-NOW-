@@ -101,6 +101,7 @@ strong {
 .phone {
 	width: 300px;
 	margin: 0px auto;
+	padding-top: 50px;
 }
 
 .phone img {
@@ -127,8 +128,8 @@ hr {
   border-bottom: 1px solid #aaa; }
 
 .footer {
+	margin-top: -80px;
   text-align: center;
-  padding-top: 30px;
   font-style: italic; }
 
 .footer p {
