@@ -16,7 +16,7 @@ body {
 
 h1 {
 	font-family: 'Coustard', serif;
-  font-size: 3em;
+  font-size: 2.5em;
 	color: #fff;
   margin-bottom: 3px; 
 	text-shadow: 1px 1px 1px #333;
@@ -58,6 +58,11 @@ a:hover {
   text-decoration: underline; 
 	color: #039603;}
 
+.main {
+	width: 300px;
+	float: left;
+}
+
 .description {
   font-size: 1.2em;
   margin-bottom: 30px;
@@ -65,9 +70,32 @@ a:hover {
   font-style: italic; }
 
 .download {
-  float: right; }
+	margin-top: 100px;
+  float: right;
+	width: 300px;
+ }
+
+.download img {
+	vertical-align: middle;;
+}
+
+.phone {
+	width: 300px;
+	margin: 0px auto;
+}
+
+.phone img {
+	margin: 0px auto`;
+}
 
 pre {
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	line-height: 1.5em;
+	width: 300px;
   background: #333;
   color: #fff;
   padding: 15px;
@@ -82,3 +110,40 @@ hr {
   text-align: center;
   padding-top: 30px;
   font-style: italic; }
+
+
+	/* `Clear Floated Elements
+	----------------------------------------------------------------------------------------------------*/
+
+	/* http://sonspring.com/journal/clearing-floats */
+
+	.clear {
+		clear: both;
+		display: block;
+		overflow: hidden;
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
+
+	/* http://perishablepress.com/press/2009/12/06/new-clearfix-hack */
+
+	.clearfix:after {
+		clear: both;
+		content: ' ';
+		display: block;
+		font-size: 0;
+		line-height: 0;
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
+
+	/*
+		The following zoom:1 rule is specifically for IE6 + IE7.
+		Move to separate stylesheet if invalid CSS is a problem.
+	*/
+	* html .clearfix,
+	*:first-child+html .clearfix {
+		zoom: 1;
+	}
